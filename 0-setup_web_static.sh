@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Web server set up for deployment of web_static.
+# Sets up a web server for deployment of web_static.
 
 apt-get update
 apt-get install -y nginx
@@ -25,7 +25,7 @@ printf %s "server {
     }
 
     location /redirect_me {
-        return 301 http://www.longmaker.tech/;
+        return 301 http://cuberule.com/;
     }
 
     error_page 404 /404.html;
